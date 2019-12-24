@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: simopr/nginxplus
+  backend_user:
+    build:
+      context: ../../udacity-c3-restapi-user
+    image: simopr/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../../udacity-c3-restapi-feed  
+    image: simopr/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../../udacity-c3-frontend  
+    image: simopr/udacity-frontend
