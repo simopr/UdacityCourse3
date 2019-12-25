@@ -78,6 +78,14 @@ NB: `cluster.k8s.local` is used to create clusters without a DNS.
 
 `kubectl apply -f reverseproxy-service.yaml`
 
+## Delete a replicaset
+
+`kubectl delete -f backend_feed.yaml`
+
+## Show logs of a pod
+
+`kubectl logs pod-example`
+
 
 ## list of pods (name and IP)
 
