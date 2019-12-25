@@ -46,6 +46,14 @@ NB: `cluster.k8s.local` is used to create clusters without a DNS.
 
 ## Deleting a Cluster
 
+get the cluster name
+
+`kubectl config current-context`
+
+`kubectl config delete-cluster CLUSTER_NAME`
+
+or
+
 `kops delete cluster --state=s3://YOURBUCKET --name YOURUSERNAME.cluster.k8s.local --yes`
 
 ## Configuring the Envirnment
